@@ -4,10 +4,10 @@ import Register from  "../pages/auth/Register"
 import Login from "../pages/auth/Login";
 import Dashboard from "../pages/dashboard/Dashboard";
 import EditProfile from "../pages/profile/EditProfile";
-import Forgotpassword from "../pages/auth/Forgotpassword";
-import Resetpassword from "../pages/auth/Resetpassword";
-import Alljournal from "../pages/journals/Alljournal";
-import Addjournal from "../pages/journals/Addjournal";
+import ForgotPassword from "../pages/auth/ForgotPassword";
+import ResetPassword from "../pages/auth/ResetPassword";
+import AllJournals from "../pages/journals/AllJournals";
+import AddJournal from "../pages/journals/AddJournal";
 import JournalDetails from "../pages/journals/JournalDetails";
 import EditJournal from "../pages/journals/EditJournal";
 import Profile from "../pages/profile/Profile";
