@@ -14,7 +14,11 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: ["http://localhost:5173", "http://localhost:5174"],
+  origin: [
+      "http://localhost:5173",
+      "http://localhost:5174",
+      "https://learng-niuh-r41rkho85-ashushukla-ops-projects.vercel.app"
+    ],
   
   credentials:true
 }))
