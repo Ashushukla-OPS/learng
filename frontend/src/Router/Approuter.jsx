@@ -63,7 +63,7 @@ function Approuter() {
        path: "/journals",
        element: (
          <ProtectedRoute>
-           <AllJournal />
+           <AllJournals />
          </ProtectedRoute>
        ),
      },
