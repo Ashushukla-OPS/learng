@@ -7,7 +7,7 @@ import Resetpassword from "../pages/auth/Resetpassword";
 
 import Dashboard from "../pages/dashboard/Dashboard";
 
-import AllJournal from "../pages/journals/AllJournal";
+import AllJournals from "../pages/journals/AllJournal";
 import AddJournal from "../pages/journals/AddJournal";
 import JournalDetails from "../pages/journals/JournalDetails";
 import EditJournal from "../pages/journals/EditJournal";
