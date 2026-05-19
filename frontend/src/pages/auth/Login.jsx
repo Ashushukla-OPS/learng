@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../../api/axios";
-
+import { useAuth } from "../../context/AuthContext";
 const Login = () => {
   const navigate = useNavigate();
-
+  const { checkUser } = useAuth();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -44,9 +44,14 @@ const Login = () => {
         password: "",
       });
 
-      setTimeout(() => {
-        navigate("/dashboard");
-      }, 1000);
+
+
+            await checkUser();
+
+            navigate("/dashboard", { replace: true });
+      // setTimeout(() => {
+      //   navigate("/dashboard");
+      // }, 1000);
     } catch (error) {
       setMessage(error.response?.data?.message || "Login failed. Try again.");
     } finally {
