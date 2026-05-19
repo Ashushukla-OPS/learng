@@ -125,7 +125,7 @@ const forgetpasswordcontroller = async(req,res)=>{
     }
       const rawToken = await jwt.sign({userId:user.id}, process.env.RESET_SECRET_KEY,{expiresIn:"20m"})
 
-    const resetLink = `http://localhost:5173/reset-password/${rawToken}`;
+    const resetLink = `https://learng-niuh.vercel.app/reset-password/${rawToken}`;
 
       await sendEmail({
         to:user.email,
